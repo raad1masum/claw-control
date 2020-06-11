@@ -22,7 +22,7 @@ func main() {
 		fmt.Println(" ") 
 	}
 
-	fmt.Println("Output:", deadReckoning(f1, f2), " seconds")
+	fmt.Println("Output:", deadReckoning(f1, f2), "seconds")
 
 }
 
