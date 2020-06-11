@@ -23,7 +23,6 @@ func main() {
 	}
 
 	fmt.Println("Output:", deadReckoning(f1, f2), "seconds")
-
 }
 
 func deadReckoning(distance float64, velocity float64) float64 {
