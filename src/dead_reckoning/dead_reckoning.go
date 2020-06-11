@@ -1,24 +1,28 @@
 package main
 
 import (
-	"bufio"
     "fmt"
-	"os"
-	"strconv"
 )
 
 func main() {
-	reader1 := bufio.NewReader(os.Stdin)
-    fmt.Print("Enter Distance: ")
-	s1, _ := reader1.ReadString('\n')
-	distance, _ := strconv.ParseFloat(s1, 64)
+	var f1 float64
+	var f2 float64
 
-	reader2 := bufio.NewReader(os.Stdin)
-    fmt.Print("Enter Velocity: ")
-	s2, _ := reader2.ReadString('\n')
-	velocity, _ := strconv.ParseFloat(s2, 64)
+	fmt.Println("Enter Distance: ")
+	_, err1 := fmt.Scanf("%f1", &f1)
 
-	fmt.Println("Output:", deadReckoning(distance, velocity))
+	if err1 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter Velocity: ")
+	_, err2 := fmt.Scanf("%f2", &f2)
+
+	if err2 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Output:", deadReckoning(f1, f2))
 
 }
 
