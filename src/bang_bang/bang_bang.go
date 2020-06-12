@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	for {
+	if bangBang(10.0, 10.0) != 0 {
 		fmt.Println(bangBang(10.0, 10.0))
 	}
 }
