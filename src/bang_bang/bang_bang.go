@@ -5,5 +5,19 @@ import (
 )
 
 func main() {
-	fmt.Println("Bang Bang")
+	for {
+		fmt.Println(bangBang(10.0, 10.0))
+	}
+}
+
+func bangBang(targetDistance float64, currentDistance float64) float64 {
+	var varError float64 = targetDistance - currentDistance
+
+	if varError > 0 {
+		varError++
+	} else if varError < 0 {
+		varError--
+	}
+	
+	return varError
 }
