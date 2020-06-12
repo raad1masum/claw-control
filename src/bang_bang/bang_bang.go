@@ -11,7 +11,7 @@ func main() {
 }
 
 func bangBang(targetDistance float64, currentDistance float64) float64 {
-	var varError float64 = targetDistance - currentDistance
+	varError := targetDistance - currentDistance
 
 	if varError > 0 {
 		varError++
