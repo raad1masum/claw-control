@@ -20,7 +20,7 @@ func bangBang(targetDistance float64, currentDistance float64) {
 			varError++
 			fmt.Println(varError)
 		} else if varError == 0 {
-			os.Exit(3)
+			os.Exit(1)
 		}
 	}
 }
