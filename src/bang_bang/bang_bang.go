@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func bangBang(targetDistance float64, currentDistance float64) {
 			varError++
 			fmt.Println(varError)
 		} else if varError == 0 {
+			os.Exit(3)
 		}
 	}
 }
