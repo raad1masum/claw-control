@@ -20,7 +20,7 @@ func bangBang(targetDistance float64, currentDistance float64) {
 			varError++
 			fmt.Println(varError)
 		} else if varError == 0 {
-			fmt.Print("Setpoint achieved, exiting controller: ")
+			fmt.Print("Setpoint Achieved\n Exiting Controller: ")
 			os.Exit(1)
 		}
 	}
