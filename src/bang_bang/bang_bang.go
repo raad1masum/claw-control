@@ -6,7 +6,24 @@ import (
 )
 
 func main() {
-	bangBang(10.0, 5.0)
+	var f1 float64
+	var f2 float64
+
+	fmt.Println("Enter Current Distance: ")
+	_, err1 := fmt.Scanf("%f1", &f1)
+
+	if err1 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter Target Distance: ")
+	_, err2 := fmt.Scanf("%f2", &f2)
+
+	if err2 != nil {
+		fmt.Println(" ") 
+	}
+
+	bangBang(f2, f1)
 }
 
 func bangBang(targetDistance float64, currentDistance float64) {
