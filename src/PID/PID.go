@@ -50,7 +50,7 @@ func main() {
 	integral := integralAdjust(f1, f2, f4)
 	derivative := derivativeAdjust(f1, f2, f5)
 
-	output := proportional + integral + derivative
+	output := sum(proportional, integral, derivative)
 
 	fmt.Println("Ouput:", output)
 }
