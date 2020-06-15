@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	fmt.Println("PID FTW")
 	proportional(10.0, 5.0, 1.0)
 }
 
