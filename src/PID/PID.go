@@ -46,7 +46,13 @@ func main() {
 		fmt.Println(" ") 
 	}
 
+	proportional := proportionalAdjust(f1, f2, f3)
+	integral := integralAdjust(f1, f2, f4)
+	derivative := derivativeAdjust(f1, f2, f5)
 
+	output := proportional + integral + derivative
+
+	fmt.Println("Ouput:", output)
 }
 
 func proportionalAdjust(setpoint float64, currentPosition float64, kP float64) float64 {
