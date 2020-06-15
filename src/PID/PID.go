@@ -85,3 +85,9 @@ func derivativeAdjust(setpoint float64, currentPosition, kD float64) float64 {
 
 	return output
 }
+
+func sum(proportional float64, integral float64, derivative float64) float64 {
+	output := proportional + integral + derivative
+
+	return output
+}
