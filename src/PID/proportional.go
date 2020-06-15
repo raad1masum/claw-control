@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func proportionalController() {
 	proportional(10.0, 5.0, 1.0)
 }
 
