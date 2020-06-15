@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func integralController() {
 	var f1 float64
 	var f2 float64
 	var f3 float64
