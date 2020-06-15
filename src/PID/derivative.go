@@ -9,5 +9,11 @@ func main() {
 }
 
 func derivative(setpoint float64, currentPosition float64, kD  float64) {
-	fmt.Println("PID FTW")
+	varError := setpoint - currentPosition
+	tmpEror := varError
+
+	derivative := (varError - tmpEror) / 0.00001
+
+	output := derivative * kD
+	fmt.Println(output)
 }
