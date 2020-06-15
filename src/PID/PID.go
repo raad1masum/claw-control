@@ -5,7 +5,48 @@ import (
 )
 
 func main() {
-	fmt.Println("PID FTW")
+	var f1 float64
+	var f2 float64
+	var f3 float64
+	var f4 float64
+	var f5 float64
+
+	fmt.Println("Enter Setpoint: ")
+	_, err1 := fmt.Scanf("%f1", &f1)
+
+	if err1 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter Current Position: ")
+	_, err2 := fmt.Scanf("%f2", &f2)
+
+	if err2 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter kP gain: ")
+	_, err3 := fmt.Scanf("%f3", &f3)
+
+	if err3 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter kI gain: ")
+	_, err4 := fmt.Scanf("%f4", &f4)
+
+	if err4 != nil {
+		fmt.Println(" ") 
+	}
+
+	fmt.Println("Enter kD gain: ")
+	_, err5 := fmt.Scanf("%f5", &f5)
+
+	if err5 != nil {
+		fmt.Println(" ") 
+	}
+
+
 }
 
 func proportionalAdjust(setpoint float64, currentPosition float64, kP float64) float64 {
