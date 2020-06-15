@@ -16,7 +16,7 @@ func proportionalController() {
 		fmt.Println(" ") 
 	}
 
-	fmt.Println("Enter Target Position: ")
+	fmt.Println("Enter Current Position: ")
 	_, err2 := fmt.Scanf("%f2", &f2)
 
 	if err2 != nil {
