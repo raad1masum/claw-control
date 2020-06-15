@@ -27,3 +27,14 @@ func integralAdjust(setpoint float64, currentPosition, kI float64) float64 {
 
 	return output
 }
+
+func derivativeAdjust(setpoint float64, currentPosition, kD float64) float64 {
+	varError := setpoint - currentPosition
+	tmpEror := varError
+
+	derivative := (varError - tmpEror) / 0.00001
+
+	output := derivative * kD
+
+	return output
+}
