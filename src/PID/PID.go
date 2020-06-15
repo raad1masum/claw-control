@@ -52,7 +52,7 @@ func main() {
 
 	output := sum(proportional, integral, derivative)
 
-	fmt.Println("Ouput:", output)
+	fmt.Println("Output:", output)
 }
 
 func proportionalAdjust(setpoint float64, currentPosition float64, kP float64) float64 {
