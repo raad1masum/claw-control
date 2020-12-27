@@ -17,7 +17,7 @@ PID stands for Proportional Integral Derivative. PID control loops are one of th
 ![pid](./assets/pid.png)
 
 ## 👨‍💻 Contact
-Linkedin: [Raadwan Masum](https://www.linkedin.com/in/raadwan-masum-9147bb1a5)
+Linkedin: [Raadwan Masum](https://www.linkedin.com/in/raadwan-masum/)
 <br>
 Github: [raad1masum](https://github.com/raad1masum)
 <br>
